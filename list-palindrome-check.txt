@@ -1,0 +1,33 @@
+3 start
+first_ele_loc:59
+len:5
+pal:0
+start:4 len zero pal_true
+7 first_ele_loc first_index
+1 first_index len sec_index
+2 sec_index one sec_index
+
+index_check:5 first_index sec_index equality_check
+pal_true:7 two pal
+stop:9
+
+equality_check:7 first_index first_addr
+7 sec_index sec_addr
+4 first_addr:0 sec_addr:0 incre_index
+7 one pal
+3 stop
+
+incre_index:1 one first_index first_index
+2 sec_index one sec_index
+3 index_check
+
+zero:0
+one:1
+two:2
+first_index:0
+sec_index:0
+11
+22
+33
+22
+11
