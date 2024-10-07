@@ -1,0 +1,148 @@
+3 start
+
+zero:0 one:1 two:2 three:3 
+four:4 five:5 six:6 seven:7 nine:9
+func:0
+cp_cell:0
+jpe_cell3:0
+jpl_cell3:0
+put_cell:0
+
+start:1 one l_cell f_cell
+
+loop:7 f_cell:0 func
+
+4 func zero put
+4 func one addition
+4 func two subt
+4 func three jump
+4 func four jpeq
+4 func five jplt
+4 func six input
+4 func seven copy
+4 func nine stop
+
+9
+
+stop:7 f_cell end
+3 end:0
+
+put:1 f_cell one value_addr
+7 value_addr:0 value
+1 f_cell two put_addr
+7 put_addr:0 put_cell
+1 put_cell l_cell put_cell
+1 put_cell one put_adr
+0 value:0 put_adr:0
+
+1 three f_cell f_cell
+3 loop
+
+
+addition:1 f_cell one f_cell
+7 f_cell add_1
+1 add_1:0 l_cell add_addr1
+
+1 f_cell one f_cell
+7 f_cell add_2
+1 add_2:0 l_cell add_addr2
+
+1 f_cell one f_cell
+7 f_cell add_3
+1 add_3:0 l_cell add_addr3
+
+1 add_addr1:0 add_addr2:0 add_addr3:0
+
+1 f_cell one f_cell
+3 loop
+
+
+subt:1 f_cell one f_cell
+7 f_cell subt_1
+1 subt_1:0 l_cell subt_addr1
+
+1 f_cell one f_cell
+7 f_cell subt_2
+1 subt_2:0 l_cell subt_addr2
+
+1 f_cell one f_cell
+7 f_cell subt_3
+1 subt_3:0 l_cell subt_addr3
+
+2 subt_addr1:0 subt_addr2:0 subt_addr3:0
+
+1 f_cell one f_cell
+3 loop
+
+
+
+jump:1 f_cell one f_cell
+7 f_cell jp_addr
+1 jp_addr:0 l_cell f_cell
+3 loop
+
+
+
+jpeq:1 f_cell one f_cell
+7 f_cell eq_addr1
+1 eq_addr1:0 l_cell jpeq_addr1
+
+1 f_cell one f_cell
+7 f_cell eq_addr2
+1 eq_addr2:0 l_cell jpeq_addr2
+
+4 jpeq_addr1:0 jpeq_addr2:0 jump_eq
+
+1 f_cell two f_cell
+3 loop
+
+jump_eq:1 f_cell one f_cell
+7 f_cell jump_eq_addr1
+1 jump_eq_addr1:0 l_cell f_cell
+3 loop
+
+
+jplt:1 f_cell one f_cell
+7 f_cell lt_addr1
+1 lt_addr1:0 l_cell jplt_addr1
+
+1 f_cell one f_cell
+7 f_cell lt_addr2
+1 lt_addr2:0 l_cell jplt_addr2
+
+5 jplt_addr1:0 jplt_addr2:0 jump_eq
+
+1 f_cell two f_cell
+3 loop
+
+jump_lt:1 f_cell one f_cell
+7 f_cell jump_lt_addr1
+1 jump_lt_addr1:0 l_cell f_cell
+3 loop
+
+
+input:1 f_cell one f_cell
+7 f_cell input_addr
+1 input_addr:0 l_cell input_pos
+6 input_pos:0
+1 f_cell one f_cell
+3 loop
+
+
+copy:1 f_cell one f_cell
+7 f_cell cp_addr1
+1 cp_addr1:0 l_cell copy_addr1
+
+1 f_cell one f_cell
+7 f_cell cp_addr2
+1 cp_addr2:0 l_cell copy_addr2
+
+7 copy_addr1:0 copy_addr2:0
+
+1 f_cell one f_cell
+3 loop
+l_cell:l_cell
+
+
+
+4 6 7 8 9 8 4 9
