@@ -1,0 +1,12 @@
+3 8 
+pos:10 fib:0 
+t1:0 t2:1 
+check:0 
+b:4 7 pos a
+1 t1 t2 fib
+7 t2 t1
+7 fib t2
+1 one check check
+3 b
+a:7 t1 fib
+9 one:1
