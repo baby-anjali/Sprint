@@ -1,0 +1,21 @@
+3 5
+num:7 fact:1
+5 num two a
+7 num fact
+7 fact adder
+2 adder one check
+7 check count
+b:4 count one c
+1 adder fact fact
+2 count one count
+3 b
+c:4 check one stop
+7 fact adder
+2 check one check
+7 check count
+3 b
+a:7 one fact
+stop:9
+adder:0 check:0
+count:0
+one:1 two:2
