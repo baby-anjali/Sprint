@@ -1,0 +1,22 @@
+3 start
+first_ele_loc:100
+n:10
+start:7 first_ele_loc pos
+loop:4 n count stop
+7 pos term_addr
+7 term_1 term_addr:0
+1 one count count
+1 term_1 term_2 swapper
+7 term_2 term_1
+7 swapper term_2
+1 one pos pos
+3 loop
+
+stop:9
+
+term_1:0
+term_2:1
+swapper:0
+one:1
+count:0
+pos:0
