@@ -1,0 +1,26 @@
+3 5 
+num:657 root:0
+5 num two a
+b:7 num value
+c:2 value ded value
+1 counter one counter
+5 value ded e
+3 c
+stop:9
+a:7 num root
+3 stop
+e:4 ded counter f
+5 counter ded d
+1 ded one ded
+7 zero counter
+3 b
+d:7 counter root
+3 stop
+f:7 ded root
+3 stop
+ded:2
+counter:0
+value:0
+two:2
+one:1
+zero:0
