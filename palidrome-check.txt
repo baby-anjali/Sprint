@@ -1,0 +1,24 @@
+3 start
+num:9 paltrue:0
+start:5 3 ten stop
+7 3 rem
+c:5 rem ten b
+2 rem ten rem
+1 quo one quo
+3 c
+b:7 rev adder
+d:1 rev adder rev
+2 count one count
+5 one count d
+1 rev rem rev
+7 quo rem
+7 zero quo
+7 ten count
+5 zero rem c
+check:4 rev num pal stop:9
+pal:7 one paltrue 3 stop
+a:7 num rev 3 check
+rem:0
+quo:0
+rev:0 adder:0 count:10
+zero:0 one:1 ten:10
