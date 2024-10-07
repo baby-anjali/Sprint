@@ -1,0 +1,40 @@
+3 start
+seq_loc:69
+seq_len:3
+cycle_loc:100
+cycle_len:5
+start:4 cycle_len zero stop
+4 seq_len zero stop
+
+
+1 seq_loc seq_len check_seq
+1 cycle_loc cycle_len check_cycle
+
+7 seq_loc seq_loc_addr
+7 cycle_loc cycle_loc_addr
+
+check_loc:4 check_cycle cycle_loc_addr stop
+
+4 check_seq seq_loc_addr change
+
+put:7 seq_loc_addr seq_addr
+7 cycle_loc_addr cycle_addr
+7 seq_addr:0 cycle_addr:0
+
+1 one seq_loc_addr seq_loc_addr
+1 one cycle_loc_addr cycle_loc_addr
+
+3 check_loc
+
+change:2 seq_loc_addr seq_len seq_loc_addr
+3 put
+
+stop:9
+
+zero:0
+one:1
+seq_loc_addr:0
+cycle_loc_addr:0
+check_cycle:0
+check_seq:0
+1 2 3
