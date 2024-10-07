@@ -1,0 +1,38 @@
+3 5
+first_element:92
+length:4
+5 length two stop
+7 first_element pos1
+7 length len
+2 len one poscount
+a:2 len two len
+1 times one times
+5 len two b
+3 a
+b:1 pos1 poscount pos2
+7 pos1 add1
+7 pos2 add2
+7 pos1 add3
+7 pos2 add4
+7 add1:0 swapper
+7 add2:0 add3:0
+7 swapper add4:0
+2 times one times
+1 count one count
+2 poscount count poscount
+4 times zero stop
+1 pos1 one pos1
+3 b
+stop:9
+len:0
+poscount:0
+count:1
+times:0
+zero:0 one:1 two:2
+pos1:0 pos2:0
+swapper:0
+55
+66
+77
+88
+99
