@@ -1,0 +1,45 @@
+6 dividend
+6 divisor
+6 digit_num
+3 start
+dividend:0
+divisor:0
+quotient:0
+remainder:0
+start:7 dividend remainder
+
+div_loop:5 remainder divisor quo_put
+2 remainder divisor remainder
+1 quotient one quotient
+3 div_loop
+
+quo_put:7 top quo_addr
+7 quotient quo_addr:0
+1 top one top
+4 remainder zero stop
+
+tens_check:4 digit_num zero stop
+4 counter ten rem_change
+1 multi remainder multi
+1 counter one counter
+3 tens_check
+
+rem_change:7 multi remainder
+7 zero quotient
+7 zero counter
+7 zero multi
+
+
+2 digit_num one digit_num
+3 div_loop
+
+counter:0
+multi:0
+zero:0
+one:1
+ten:10
+digit_num:0
+
+top:integral
+stop:9
+integral:0
