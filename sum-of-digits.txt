@@ -1,0 +1,22 @@
+3 start num:96 result:1
+start:7 num rem
+rem_check:5 rem ten add_func
+2 rem ten rem
+1 quo one quo
+3 rem_check
+
+add_func:1 sod rem sod
+7 quo rem
+7 zero quo
+4 rem zero goto_result
+3 rem_check
+
+goto_result:7 sod result
+stop:9
+
+rem:0
+quo:0
+sod:0
+zero:0
+one:1
+ten:10
